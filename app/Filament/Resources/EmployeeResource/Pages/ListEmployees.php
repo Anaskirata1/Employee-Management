@@ -16,4 +16,11 @@ class ListEmployees extends ListRecords
             Actions\CreateAction::make(),
         ];
     }
+
+    protected function getHeaderWidgets(): array
+    {
+        return [
+             \App\Filament\Resources\EmployeeResource\Widgets\EmployeeStatsOverview::class,
+        ];
+    }
 }

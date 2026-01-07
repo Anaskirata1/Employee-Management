@@ -124,6 +124,13 @@ class EmployeeResource extends Resource
         ];
     }
 
+     public static function getWidgets(): array
+{
+    return [
+         \App\Filament\Resources\EmployeeResource\Widgets\EmployeeStatsOverview::class,
+    ];
+}
+
     public static function getPages(): array
     {
         return [
