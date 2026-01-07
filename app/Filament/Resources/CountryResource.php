@@ -61,12 +61,13 @@ protected static ?string $navigationIcon = 'heroicon-o-globe-alt';
             ]);
     }
 
-    public static function getRelations(): array
-    {
-        return [
-            //
-        ];
-    }
+   public static function getRelations(): array
+{
+    return [
+        RelationManagers\EmployeesRelationManager::class,
+        RelationManagers\StateRelationManager::class,
+    ];
+}
 
     public static function getPages(): array
     {
