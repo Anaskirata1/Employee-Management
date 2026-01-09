@@ -23,6 +23,9 @@ return new class extends Migration
             $table->char('zip_code');
             $table->date('birth_date');
             $table->date('date_hired');
+            $table->string('email')->unique();
+            $table->string('password');
+            $table->boolean('status')->default(false);
             $table->timestamps();
         });
     }
