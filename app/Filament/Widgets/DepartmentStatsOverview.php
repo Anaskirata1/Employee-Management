@@ -1,18 +1,20 @@
 <?php
+
 namespace App\Filament\Widgets;
 
 use Filament\Widgets\StatsOverviewWidget as BaseWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;
-use App\Models\Employee;
+use App\Models\Department;
 
-class EmployeeStatsOverview extends BaseWidget
+class DepartmentStatsOverview extends BaseWidget
 {
     protected int|string|array $columnSpan = 4;
-    protected static ?int $sort = 5;
+    protected static ?int $sort = 4;
     protected function getStats(): array
     {
         return [
-            Stat::make('Employees', Employee::count()),
+            Stat::make('Departments', Department::count()),
+
         ];
     }
 }

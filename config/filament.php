@@ -17,7 +17,11 @@ return [
     'namespace' => 'App\\Filament\\Widgets',
     'path' => app_path('Filament/Widgets'),
     'register' => [
-        \App\Filament\Widgets\EmployeeStatsOverview::class,
+        // \App\Filament\Widgets\EmployeeStatsOverview::class,
+        // \App\Filament\Widgets\CountryStatsOverview::class,
+        // \App\Filament\Widgets\StateStatsOverview::class,
+        // \App\Filament\Widgets\CityStatsOverview::class,
+        // \App\Filament\Widgets\DepartmentStatsOverview::class,
     ],
 ],
     'broadcasting' => [
