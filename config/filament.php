@@ -13,7 +13,13 @@ return [
     | This will allow your users to receive real-time notifications.
     |
     */
-
+ 'widgets' => [
+    'namespace' => 'App\\Filament\\Widgets',
+    'path' => app_path('Filament/Widgets'),
+    'register' => [
+        \App\Filament\Widgets\EmployeeStatsOverview::class,
+    ],
+],
     'broadcasting' => [
 
         // 'echo' => [
@@ -86,13 +92,8 @@ return [
 
     'livewire_loading_delay' => 'default',
 
-    'widgets' => [
-    'namespace' => 'App\\Filament\\Resources\\EmployeeResource\\Widgets',
-    'path' => app_path('Filament/Resources/EmployeeResource/Widgets'),
-    'register' => [
-        \App\Filament\Resources\EmployeeResource\Widgets\EmployeeStatsOverview::class,
-    ],
-],
+
+
 
 
 
